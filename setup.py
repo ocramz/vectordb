@@ -14,14 +14,14 @@ with open("LICENSE") as f:
     license_text = f.read()
 
 setup(
-    name="{{library_name}}",
+    name="vectordb",
     version="0.0.1",
     py_modules=[],
-    install_requires=["twined >= 0.0.10"],
-    url="https://www.github.com/{{github_handle}}/{{github_repo_name}}",
+    install_requires=["annoy"],
+    url="https://www.github.com/ocramz/vectordb",
     license='MIT',
-    author="{{library_author}}",
-    description="{{library_description}}",
+    author="Marco Zocca",
+    description="A simple vector database",
     long_description=readme_text,
     long_description_content_type="text/markdown",
     packages=find_packages(exclude=("tests", "docs")),
@@ -36,5 +36,5 @@ setup(
         "Operating System :: OS Independent",
     ],
     python_requires=">=3.6",
-    keywords=["{{library_keyword_1}}", "{{library_keyword_2}}"],
+    keywords=["vector", "database"],
 )
